@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<html lang="zh-CN"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>翔哥的数字空间 | XG-SPACE</title>
@@ -9,9 +8,9 @@
 <meta property="og:title" content="翔哥的数字空间 | XG-SPACE">
 <meta property="og:description" content="学习、游戏、创作、日常 · 一个初中生的赛博空间">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🚀&lt;/text&gt;&lt;/svg&gt;">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=Rajdhani:wght@300;400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
 <style>
 /* ===== CSS RESET & VARIABLES ===== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -857,6 +856,295 @@ body {
   background: rgba(0, 240, 255, 0.08);
   color: var(--neon-cyan);
   border: 1px solid rgba(0, 240, 255, 0.15);
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.subject-tag:hover {
+  background: rgba(0, 240, 255, 0.18);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
+}
+
+.subject-tag.tag-maic {
+  background: rgba(176, 0, 255, 0.1);
+  color: var(--neon-purple);
+  border-color: rgba(176, 0, 255, 0.25);
+}
+
+.subject-tag.tag-maic:hover {
+  background: rgba(176, 0, 255, 0.2);
+  box-shadow: 0 0 12px rgba(176, 0, 255, 0.25);
+}
+
+.subject-tag.tag-page {
+  background: rgba(0, 255, 136, 0.08);
+  color: var(--neon-green);
+  border-color: rgba(0, 255, 136, 0.2);
+}
+
+.subject-tag.tag-page:hover {
+  background: rgba(0, 255, 136, 0.18);
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.2);
+}
+
+/* ===== CLASSROOM SECTION ===== */
+.classroom-intro {
+  margin-bottom: 40px;
+}
+
+.classroom-hero-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(176, 0, 255, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.classroom-hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple), var(--neon-pink));
+}
+
+.classroom-hero-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.classroom-hero-title {
+  font-family: var(--font-cn);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.classroom-hero-desc {
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.classroom-features {
+  list-style: none;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 28px;
+  display: grid;
+  gap: 10px;
+}
+
+.classroom-features li {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  padding: 8px 16px;
+  background: rgba(0, 240, 255, 0.04);
+  border-radius: 8px;
+  border-left: 3px solid var(--neon-cyan);
+}
+
+.classroom-cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-classroom-primary {
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan));
+  color: #fff;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.btn-classroom-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(176, 0, 255, 0.3);
+}
+
+.btn-classroom-secondary {
+  font-family: var(--font-cn);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 12px;
+  border: 1px solid rgba(176, 0, 255, 0.3);
+  background: transparent;
+  color: var(--neon-purple);
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.btn-classroom-secondary:hover {
+  background: rgba(176, 0, 255, 0.1);
+  box-shadow: 0 0 20px rgba(176, 0, 255, 0.15);
+}
+
+.classroom-subtitle {
+  font-family: var(--font-cn);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 28px;
+  color: var(--text-primary);
+}
+
+.classroom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.classroom-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.classroom-card:hover {
+  border-color: rgba(176, 0, 255, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.classroom-card-header {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.classroom-card-icon {
+  font-size: 1.6rem;
+}
+
+.classroom-card-subject {
+  font-family: var(--font-cn);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.classroom-card-body {
+  padding: 20px 24px 24px;
+}
+
+.classroom-card-body p {
+  font-family: var(--font-cn);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.classroom-card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-classroom-card {
+  font-family: var(--font-cn);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan));
+  color: #fff;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-classroom-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(176, 0, 255, 0.3);
+}
+
+.btn-classroom-outline {
+  font-family: var(--font-cn);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 136, 0.25);
+  background: transparent;
+  color: var(--neon-green);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-classroom-outline:hover {
+  background: rgba(0, 255, 136, 0.08);
+}
+
+.classroom-resources {
+  margin-top: 20px;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.resource-link:hover {
+  border-color: rgba(176, 0, 255, 0.3);
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.resource-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.resource-link strong {
+  font-family: var(--font-cn);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.resource-link p {
+  font-family: var(--font-cn);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
 /* ===== VIDEO SECTION ===== */
@@ -1823,9 +2111,12 @@ textarea.form-input {
 
   .learning-grid,
   .video-grid,
-  .creations-grid {
+  .creations-grid,
+  .classroom-grid {
     grid-template-columns: 1fr;
   }
+
+  .resource-grid { grid-template-columns: 1fr; }
 
   .interests-grid { grid-template-columns: repeat(2, 1fr); }
 
@@ -1851,7 +2142,7 @@ textarea.form-input {
   <div class="orb orb-2"></div>
   <div class="orb orb-3"></div>
 </div>
-<canvas class="particles" id="particles"></canvas>
+<canvas class="particles" id="particles" width="1366" height="607"></canvas>
 
 <!-- Toast Notification -->
 <div class="toast" id="toast"></div>
@@ -1875,11 +2166,11 @@ textarea.form-input {
     <form class="auth-form active" id="loginForm">
       <div class="form-group">
         <label class="form-label">用户名</label>
-        <input type="text" class="form-input" id="loginUsername" placeholder="输入用户名" autocomplete="username" required>
+        <input type="text" class="form-input" id="loginUsername" placeholder="输入用户名" autocomplete="username" required="">
       </div>
       <div class="form-group">
         <label class="form-label">密码</label>
-        <input type="password" class="form-input" id="loginPassword" placeholder="输入密码" autocomplete="current-password" required>
+        <input type="password" class="form-input" id="loginPassword" placeholder="输入密码" autocomplete="current-password" required="">
       </div>
       <div class="form-error" id="loginError"></div>
       <button type="submit" class="btn-submit">🚀 进入空间</button>
@@ -1892,10 +2183,10 @@ textarea.form-input {
         <label class="form-label">选择你的身份</label>
         <div class="role-selector">
           <label class="role-option selected">
-            <input type="radio" name="role" value="classmate" checked>
+            <input type="radio" name="role" value="classmate" checked="">
             <span class="role-emoji">👨‍🎓</span>
             <span class="role-name">同学</span>
-            <span class="role-desc">浏览 & 评论</span>
+            <span class="role-desc">浏览 &amp; 评论</span>
           </label>
           <label class="role-option">
             <input type="radio" name="role" value="owner">
@@ -1907,12 +2198,12 @@ textarea.form-input {
       </div>
       <div class="form-group">
         <label class="form-label">用户名</label>
-        <input type="text" class="form-input" id="regUsername" placeholder="取一个酷酷的名字" required>
+        <input type="text" class="form-input" id="regUsername" placeholder="取一个酷酷的名字" required="">
         <p class="form-hint">2-16 个字符，支持中英文</p>
       </div>
       <div class="form-group">
         <label class="form-label">密码</label>
-        <input type="password" class="form-input" id="regPassword" placeholder="设置密码（至少4位）" required>
+        <input type="password" class="form-input" id="regPassword" placeholder="设置密码（至少4位）" required="">
       </div>
       <div class="form-group">
         <label class="form-label">选择头像</label>
@@ -1974,20 +2265,21 @@ textarea.form-input {
 </div>
 
 <!-- Navigation -->
-<nav class="nav" id="nav">
+<nav class="nav scrolled" id="nav">
   <a href="#" class="nav-logo">XG-SPACE</a>
   <div class="nav-right">
     <ul class="nav-links" id="navLinks">
-      <li><a href="#hero" class="active">首页</a></li>
-      <li><a href="#learning">学习</a></li>
-      <li><a href="#videos">视频</a></li>
-      <li><a href="#creations">创作</a></li>
-      <li><a href="#daily">日志</a></li>
-      <li><a href="#interests">兴趣</a></li>
+      <li><a href="#hero" class="">首页</a></li>
+      <li><a href="#learning" class="">学习</a></li>
+      <li><a href="#classroom" class="">在线课堂</a></li>
+      <li><a href="#videos" class="">视频</a></li>
+      <li><a href="#creations" class="">创作</a></li>
+      <li><a href="#daily" class="">日志</a></li>
+      <li><a href="#interests" class="active">兴趣</a></li>
     </ul>
 
     <!-- Auth Area -->
-    <div id="authArea">
+    <div id="authArea" style="display: block;">
       <button class="nav-auth-btn" id="navLoginBtn">🔐 登录 / 注册</button>
     </div>
 
@@ -2019,7 +2311,7 @@ textarea.form-input {
     <h1>
       <span class="gradient-text">翔哥</span>的<br>数字空间
     </h1>
-    <p class="hero-subtitle"></p>
+    <p class="hero-subtitle">初中生 · 编程少年 · 游戏玩家 · 终身学习者</p>
     <div class="hero-tags">
       <span class="hero-tag tag-code">🐍 Python</span>
       <span class="hero-tag tag-code">⚡ C++</span>
@@ -2028,21 +2320,21 @@ textarea.form-input {
       <span class="hero-tag tag-game">🔫 和平精英</span>
       <span class="hero-tag tag-sport">🏸 羽毛球</span>
       <span class="hero-tag tag-sport">🚴 骑车</span>
-      <span class="hero-tag tag-learn">♟️ 国际象棋</span>
-      <span class="hero-tag tag-learn">🌍 多邻国英语</span>
+      <span class="hero-tag tag-learn">🎲 魔方</span>
+      <span class="hero-tag tag-learn">♟️ 国际象棋</span><span class="hero-tag tag-learn">🌍 多邻国英语</span>
       <span class="hero-tag tag-code">🤖 ESP32 DIY</span>
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-number" data-count="2">0</div>
+        <div class="stat-number" data-count="3">3</div>
         <div class="stat-label">编程语言</div>
       </div>
       <div class="stat">
-        <div class="stat-number" data-count="3">0</div>
+        <div class="stat-number" data-count="3">3</div>
         <div class="stat-label">游戏精通</div>
       </div>
       <div class="stat">
-        <div class="stat-number" data-count="365">0</div>
+        <div class="stat-number" data-count="365">365</div>
         <div class="stat-label">多邻国天数</div>
       </div>
     </div>
@@ -2051,24 +2343,26 @@ textarea.form-input {
 
 <!-- Learning Center -->
 <section class="section" id="learning">
-  <div class="section-header reveal">
+  <div class="section-header reveal visible">
     <span class="section-icon">📚</span>
     <h2 class="section-title">LEARNING CENTER</h2>
-    <p class="section-subtitle">各科学习资源 · 由爸爸精心整理</p>
+    <p class="section-subtitle">各科学习资源 · 日常精心整理</p>
     <div class="section-divider"></div>
   </div>
   <div class="learning-grid">
-    <div class="subject-card reveal">
+    <div class="subject-card reveal visible" data-href="subjects/math.html">
       <span class="subject-icon">🔢</span>
       <h3 class="subject-name">数学</h3>
       <p class="subject-desc">几何证明技巧、函数图像分析、竞赛题精选、解题思维导图</p>
       <div class="subject-tags">
         <span class="subject-tag">答题技巧</span>
-        <span class="subject-tag">错题本</span>
-        <span class="subject-tag">思维训练</span>
+        <a href="https://open.maic.chat/classroom/Pa7XtRPIah" class="subject-tag" target="_blank">错题本</a>
+        <a href="https://open.maic.chat/classroom/l0J_G5IXic" class="subject-tag" target="_blank">思维训练</a>
+        <a href="https://open.maic.chat/" class="subject-tag tag-maic" target="_blank">🎓 在线课堂</a>
+        <a href="subjects/math.html" class="subject-tag tag-page">📚 学习资源</a>
       </div>
     </div>
-    <div class="subject-card reveal">
+    <div class="subject-card reveal visible" data-href="subjects/chinese.html">
       <span class="subject-icon">📝</span>
       <h3 class="subject-name">语文</h3>
       <p class="subject-desc">阅读理解套路、作文素材库、文言文实词虚词总结、名著导读</p>
@@ -2076,9 +2370,11 @@ textarea.form-input {
         <span class="subject-tag">作文模板</span>
         <span class="subject-tag">古诗词</span>
         <span class="subject-tag">阅读技巧</span>
+        <a href="https://open.maic.chat/" class="subject-tag tag-maic" target="_blank">🎓 在线课堂</a>
+        <a href="subjects/chinese.html" class="subject-tag tag-page">📚 学习资源</a>
       </div>
     </div>
-    <div class="subject-card reveal">
+    <div class="subject-card reveal visible" data-href="subjects/english.html">
       <span class="subject-icon">🌍</span>
       <h3 class="subject-name">英语</h3>
       <p class="subject-desc">语法专项突破、高频词汇表、听力训练素材、写作句型积累</p>
@@ -2086,9 +2382,11 @@ textarea.form-input {
         <span class="subject-tag">词汇表</span>
         <span class="subject-tag">语法笔记</span>
         <span class="subject-tag">听力练习</span>
+        <a href="https://open.maic.chat/" class="subject-tag tag-maic" target="_blank">🎓 在线课堂</a>
+        <a href="subjects/english.html" class="subject-tag tag-page">📚 学习资源</a>
       </div>
     </div>
-    <div class="subject-card reveal">
+    <div class="subject-card reveal visible" data-href="subjects/physics.html">
       <span class="subject-icon">🔬</span>
       <h3 class="subject-name">物理</h3>
       <p class="subject-desc">力学分析方法、电学实验要点、光学作图规范、易错题归纳</p>
@@ -2096,9 +2394,11 @@ textarea.form-input {
         <span class="subject-tag">实验要点</span>
         <span class="subject-tag">公式大全</span>
         <span class="subject-tag">作图规范</span>
+        <a href="https://open.maic.chat/" class="subject-tag tag-maic" target="_blank">🎓 在线课堂</a>
+        <a href="subjects/physics.html" class="subject-tag tag-page">📚 学习资源</a>
       </div>
     </div>
-    <div class="subject-card reveal">
+    <div class="subject-card reveal visible" data-href="subjects/chemistry.html">
       <span class="subject-icon">🧪</span>
       <h3 class="subject-name">化学</h3>
       <p class="subject-desc">方程式配平、物质分类记忆法、实验操作规范、推断题攻略</p>
@@ -2106,9 +2406,11 @@ textarea.form-input {
         <span class="subject-tag">方程式</span>
         <span class="subject-tag">实验规范</span>
         <span class="subject-tag">推断技巧</span>
+        <a href="https://open.maic.chat/" class="subject-tag tag-maic" target="_blank">🎓 在线课堂</a>
+        <a href="subjects/chemistry.html" class="subject-tag tag-page">📚 学习资源</a>
       </div>
     </div>
-    <div class="subject-card reveal">
+    <div class="subject-card reveal visible" data-href="subjects/coding.html">
       <span class="subject-icon">💻</span>
       <h3 class="subject-name">编程</h3>
       <p class="subject-desc">Python 项目实战、C++ 算法入门、ESP32 硬件编程、代码笔记</p>
@@ -2117,12 +2419,14 @@ textarea.form-input {
         <span class="subject-tag">C++</span>
         <span class="subject-tag">ESP32</span>
         <span class="subject-tag">算法</span>
+        <a href="https://open.maic.chat/" class="subject-tag tag-maic" target="_blank">🎓 在线课堂</a>
+        <a href="subjects/coding.html" class="subject-tag tag-page">📚 学习资源</a>
       </div>
     </div>
   </div>
 
   <div class="code-showcase">
-    <div class="code-card reveal">
+    <div class="code-card reveal visible">
       <div class="code-header">
         <div class="code-dot"></div>
         <div class="code-dot"></div>
@@ -2140,7 +2444,7 @@ textarea.form-input {
         <span class="func">draw_spiral</span>()
       </div>
     </div>
-    <div class="code-card reveal">
+    <div class="code-card reveal visible">
       <div class="code-header">
         <div class="code-dot"></div>
         <div class="code-dot"></div>
@@ -2163,24 +2467,105 @@ textarea.form-input {
   </div>
 </section>
 
-<!-- Video Section -->
-<section class="section" id="videos">
-  <div class="section-header reveal">
-    <span class="section-icon">🎬</span>
-    <h2 class="section-title">VIDEO VAULT</h2>
-    <p class="section-subtitle">收藏的精彩视频 · 来自 B站 & 抖音</p>
+<!-- Online Classroom Section -->
+<section class="section" id="classroom">
+  <div class="section-header reveal visible">
+    <span class="section-icon">🎓</span>
+    <h2 class="section-title">ONLINE CLASSROOM</h2>
+    <p class="section-subtitle">基于清华大学 OpenMAIC · AI 多智能体互动课堂</p>
     <div class="section-divider"></div>
   </div>
 
-  <div class="video-tabs reveal">
-    <button class="video-tab active" data-filter="all">全部</button>
+  <div class="classroom-intro reveal visible">
+    <div class="classroom-hero-card">
+      <div class="classroom-hero-icon">🤖</div>
+      <h3 class="classroom-hero-title">遇到难题？让 AI 老师来帮你！</h3>
+      <p class="classroom-hero-desc">基于清华大学开源项目 <strong>OpenMAIC</strong>（Open Multi-Agent Interactive Classroom），你可以：</p>
+      <ul class="classroom-features">
+        <li>📸 <strong>上传题目照片</strong> — 拍下你的错题或疑难问题</li>
+        <li>🧠 <strong>获得详细解题步骤</strong> — AI 教师逐步讲解思路分析</li>
+        <li>💬 <strong>多智能体讨论</strong> — AI 老师和 AI 同学一起帮你理解</li>
+        <li>📝 <strong>互动测验</strong> — 自动生成练习题，巩固所学知识</li>
+        <li>🎨 <strong>白板讲解</strong> — AI 在白板上画图、写公式，直观易懂</li>
+      </ul>
+      <div class="classroom-cta">
+        <a href="https://open.maic.chat/" class="btn-classroom-primary" target="_blank" rel="noopener">
+          🚀 立即体验 OpenMAIC 在线课堂
+        </a>
+        <a href="https://github.com/THU-MAIC/OpenMAIC" class="btn-classroom-secondary" target="_blank" rel="noopener">
+          ⭐ GitHub 开源仓库
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="classroom-resources reveal visible">
+    <h3 class="classroom-subtitle">🔗 OpenMAIC 学习资源</h3>
+    <div class="resource-grid">
+      <a href="https://open.maic.chat/" class="resource-link" target="_blank" rel="noopener">
+        <span class="resource-icon">🌐</span>
+        <div>
+          <strong>OpenMAIC 官方体验</strong>
+          <p>直接在浏览器中体验 AI 互动课堂</p>
+        </div>
+      </a>
+      <a href="https://github.com/THU-MAIC/OpenMAIC" class="resource-link" target="_blank" rel="noopener">
+        <span class="resource-icon">⭐</span>
+        <div>
+          <strong>GitHub 仓库</strong>
+          <p>查看源码、提交 Issue、参与贡献</p>
+        </div>
+      </a>
+      <a href="https://github.com/THU-MAIC/OpenMAIC/blob/main/README-zh.md" class="resource-link" target="_blank" rel="noopener">
+        <span class="resource-icon">📖</span>
+        <div>
+          <strong>中文文档</strong>
+          <p>安装指南、功能介绍、使用教程</p>
+        </div>
+      </a>
+      <a href="https://discord.gg/PtZaaTbH" class="resource-link" target="_blank" rel="noopener">
+        <span class="resource-icon">💬</span>
+        <div>
+          <strong>社区交流</strong>
+          <p>加入 Discord 社区，与其他学习者交流</p>
+        </div>
+      </a>
+      <a href="https://github.com/THU-MAIC/OpenMAIC/blob/main/LICENSE" class="resource-link" target="_blank" rel="noopener">
+        <span class="resource-icon">📜</span>
+        <div>
+          <strong>开源协议</strong>
+          <p>MIT 开源协议，自由使用和修改</p>
+        </div>
+      </a>
+      <a href="https://jcst.ict.ac.cn/en/article/doi/10.1007/s11390-025-6000-0" class="resource-link" target="_blank" rel="noopener">
+        <span class="resource-icon">📄</span>
+        <div>
+          <strong>学术论文</strong>
+          <p>清华大学 MAIC 项目研究成果论文</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="section" id="videos">
+  <div class="section-header reveal visible">
+    <span class="section-icon">🎬</span>
+    <h2 class="section-title">VIDEO VAULT</h2>
+    <p class="section-subtitle">收藏的精彩视频 · 来自 B站 &amp; 抖音</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="video-tabs reveal visible">
+    <button class="video-tab" data-filter="all">全部</button>
     <button class="video-tab" data-filter="game">🎮 游戏</button>
-    <button class="video-tab" data-filter="subject">📖 学科</button>
+    <button class="video-tab active" data-filter="subject">📖 学科</button>
     <button class="video-tab" data-filter="code">💻 编程</button>
   </div>
 
   <div class="video-grid" id="videoGrid">
-    <a href="#" class="video-card reveal" data-category="game" target="_blank" rel="noopener">
+    <a href="#" class="video-card reveal visible hidden" data-category="game" target="_blank" rel="noopener">
       <div class="video-thumb">
         <span class="video-thumb-placeholder">🎮</span>
         <div class="video-play"><div class="play-btn"></div></div>
@@ -2191,7 +2576,7 @@ textarea.form-input {
         <p class="video-meta"><span class="video-category-tag cat-game">游戏</span>收藏于 2026.03</p>
       </div>
     </a>
-    <a href="#" class="video-card reveal" data-category="game" target="_blank" rel="noopener">
+    <a href="#" class="video-card reveal visible hidden" data-category="game" target="_blank" rel="noopener">
       <div class="video-thumb">
         <span class="video-thumb-placeholder">🃏</span>
         <div class="video-play"><div class="play-btn"></div></div>
@@ -2202,7 +2587,7 @@ textarea.form-input {
         <p class="video-meta"><span class="video-category-tag cat-game">游戏</span>收藏于 2026.03</p>
       </div>
     </a>
-    <a href="#" class="video-card reveal" data-category="game" target="_blank" rel="noopener">
+    <a href="#" class="video-card reveal visible hidden" data-category="game" target="_blank" rel="noopener">
       <div class="video-thumb">
         <span class="video-thumb-placeholder">🔫</span>
         <div class="video-play"><div class="play-btn"></div></div>
@@ -2213,7 +2598,7 @@ textarea.form-input {
         <p class="video-meta"><span class="video-category-tag cat-game">游戏</span>收藏于 2026.03</p>
       </div>
     </a>
-    <a href="#" class="video-card reveal" data-category="subject" target="_blank" rel="noopener">
+    <a href="#" class="video-card reveal visible" data-category="subject" target="_blank" rel="noopener">
       <div class="video-thumb">
         <span class="video-thumb-placeholder">📐</span>
         <div class="video-play"><div class="play-btn"></div></div>
@@ -2224,7 +2609,7 @@ textarea.form-input {
         <p class="video-meta"><span class="video-category-tag cat-subject">学科</span>收藏于 2026.03</p>
       </div>
     </a>
-    <a href="#" class="video-card reveal" data-category="subject" target="_blank" rel="noopener">
+    <a href="#" class="video-card reveal visible" data-category="subject" target="_blank" rel="noopener">
       <div class="video-thumb">
         <span class="video-thumb-placeholder">⚡</span>
         <div class="video-play"><div class="play-btn"></div></div>
@@ -2235,7 +2620,7 @@ textarea.form-input {
         <p class="video-meta"><span class="video-category-tag cat-subject">学科</span>收藏于 2026.03</p>
       </div>
     </a>
-    <a href="#" class="video-card reveal" data-category="code" target="_blank" rel="noopener">
+    <a href="#" class="video-card reveal visible hidden" data-category="code" target="_blank" rel="noopener">
       <div class="video-thumb">
         <span class="video-thumb-placeholder">🐍</span>
         <div class="video-play"><div class="play-btn"></div></div>
@@ -2246,7 +2631,7 @@ textarea.form-input {
         <p class="video-meta"><span class="video-category-tag cat-code">编程</span>收藏于 2026.03</p>
       </div>
     </a>
-    <a href="#" class="video-card reveal" data-category="code" target="_blank" rel="noopener">
+    <a href="#" class="video-card reveal visible hidden" data-category="code" target="_blank" rel="noopener">
       <div class="video-thumb">
         <span class="video-thumb-placeholder">🤖</span>
         <div class="video-play"><div class="play-btn"></div></div>
@@ -2257,7 +2642,7 @@ textarea.form-input {
         <p class="video-meta"><span class="video-category-tag cat-code">编程</span>收藏于 2026.03</p>
       </div>
     </a>
-    <a href="#" class="video-card reveal" data-category="code" target="_blank" rel="noopener">
+    <a href="#" class="video-card reveal visible hidden" data-category="code" target="_blank" rel="noopener">
       <div class="video-thumb">
         <span class="video-thumb-placeholder">⚡</span>
         <div class="video-play"><div class="play-btn"></div></div>
@@ -2275,14 +2660,14 @@ textarea.form-input {
 
 <!-- Creations Section -->
 <section class="section" id="creations">
-  <div class="section-header reveal">
+  <div class="section-header reveal visible">
     <span class="section-icon">🛠️</span>
     <h2 class="section-title">CREATIONS</h2>
     <p class="section-subtitle">翔哥的创作作品展示</p>
     <div class="section-divider"></div>
   </div>
   <div class="creations-grid">
-    <div class="creation-card reveal">
+    <div class="creation-card reveal visible">
       <div class="creation-media">🎨<span class="creation-type-badge type-art">美术</span></div>
       <div class="creation-body">
         <h3 class="creation-title">科幻城市 · 数字绘画</h3>
@@ -2293,7 +2678,7 @@ textarea.form-input {
         </div>
       </div>
     </div>
-    <div class="creation-card reveal">
+    <div class="creation-card reveal visible">
       <div class="creation-media">🎵<span class="creation-type-badge type-music">AI 音乐</span></div>
       <div class="creation-body">
         <h3 class="creation-title">星际穿越 · AI 生成电子乐</h3>
@@ -2304,7 +2689,7 @@ textarea.form-input {
         </div>
       </div>
     </div>
-    <div class="creation-card reveal">
+    <div class="creation-card reveal visible">
       <div class="creation-media">🤖<span class="creation-type-badge type-hardware">硬件 DIY</span></div>
       <div class="creation-body">
         <h3 class="creation-title">ESP32 AI 聊天机器人</h3>
@@ -2317,7 +2702,7 @@ textarea.form-input {
         </div>
       </div>
     </div>
-    <div class="creation-card reveal">
+    <div class="creation-card reveal visible">
       <div class="creation-media">🐍<span class="creation-type-badge type-code">编程</span></div>
       <div class="creation-body">
         <h3 class="creation-title">Python 贪吃蛇游戏</h3>
@@ -2344,35 +2729,102 @@ textarea.form-input {
   </div>
 
   <div class="log-timeline" id="logTimeline">
-    <!-- Default entries - rendered by JS if no stored data -->
-  </div>
+        <div class="log-entry reveal  visible">
+          <div class="log-date">
+            2026.03.24
+            <span class="log-author-tag owner">站长</span>
+          </div>
+          <h3 class="log-title">今天搭了一个超酷的红石机关！</h3>
+          <div class="log-content">在 Minecraft 里终于把自动农场搭好了，用了观察器和活塞的组合。还试了用 C++ 写了一个简单的排序算法，虽然冒泡排序很简单但跑起来还是很有成就感。晚上和爸爸打了半小时羽毛球，赢了两局 💪</div>
+          <div class="log-mood">😎 🏸 💻</div>
+          <div class="log-comments">
+            
+        <div class="comment">
+          <div class="comment-avatar" style="background:rgba(176,0,255,0.15)">🎮</div>
+          <div class="comment-body">
+            <div class="comment-author">小明</div>
+            <div class="comment-text">红石农场好厉害！能教教我吗？</div>
+            <div class="comment-time">3 小时前</div>
+          </div>
+        </div>
+      
+            <div class="login-to-comment" onclick="UI.openAuthModal()">🔐 登录后可以评论</div>
+          </div>
+        </div>
+      
+        <div class="log-entry reveal  visible">
+          <div class="log-date">
+            2026.03.23
+            <span class="log-author-tag owner">站长</span>
+          </div>
+          <h3 class="log-title">多邻国国际象棋连胜第 15 天</h3>
+          <div class="log-content">今天在多邻国上国际象棋的连胜到了 15 天！还学了一个新开局叫「西西里防御」。英语那边也完成了每日任务，感觉词汇量又涨了一点。下午骑车去了公园，天气很好。</div>
+          <div class="log-mood">♟️ 🚴 ☀️</div>
+          <div class="log-comments">
+            
+            <div class="login-to-comment" onclick="UI.openAuthModal()">🔐 登录后可以评论</div>
+          </div>
+        </div>
+      
+        <div class="log-entry reveal  visible">
+          <div class="log-date">
+            2026.03.22
+            <span class="log-author-tag owner">站长</span>
+          </div>
+          <h3 class="log-title">ESP32 机器人终于能说话了！</h3>
+          <div class="log-content">调了一整天，ESP32 终成功接上了语音模块！现在它能识别我说的话然后用 AI 生成回复念出来。下一步要给它 3D 打印一个外壳。Kards 今天用了一个新卡组连赢了五把。</div>
+          <div class="log-mood">🤖 🃏 🎉</div>
+          <div class="log-comments">
+            
+        <div class="comment">
+          <div class="comment-avatar" style="background:rgba(176,0,255,0.15)">🚀</div>
+          <div class="comment-body">
+            <div class="comment-author">阿杰</div>
+            <div class="comment-text">这也太酷了吧！什么时候能看看实物？</div>
+            <div class="comment-time">3月22日</div>
+          </div>
+        </div>
+      
+        <div class="comment">
+          <div class="comment-avatar" style="background:rgba(176,0,255,0.15)">🌟</div>
+          <div class="comment-body">
+            <div class="comment-author">小美</div>
+            <div class="comment-text">ESP32 + AI 好有意思，我也想学！</div>
+            <div class="comment-time">3月22日</div>
+          </div>
+        </div>
+      
+            <div class="login-to-comment" onclick="UI.openAuthModal()">🔐 登录后可以评论</div>
+          </div>
+        </div>
+      </div>
 </section>
 
 <!-- Interests Section -->
 <section class="section" id="interests">
-  <div class="section-header reveal">
+  <div class="section-header reveal visible">
     <span class="section-icon">⭐</span>
     <h2 class="section-title">INTERESTS</h2>
     <p class="section-subtitle">翔哥的兴趣世界</p>
     <div class="section-divider"></div>
   </div>
   <div class="interests-grid">
-    <div class="interest-card reveal"><span class="interest-emoji">🏸</span><h3 class="interest-name">羽毛球</h3><p class="interest-detail">每周和爸爸对战</p></div>
-    <div class="interest-card reveal"><span class="interest-emoji">🚴</span><h3 class="interest-name">骑车</h3><p class="interest-detail">探索城市周边</p></div>
-    <div class="interest-card reveal"><span class="interest-emoji">🎮</span><h3 class="interest-name">Minecraft</h3><p class="interest-detail">红石 & 建筑大师</p></div>
-    <div class="interest-card reveal"><span class="interest-emoji">🃏</span><h3 class="interest-name">Kards</h3><p class="interest-detail">策略卡牌对战</p></div>
-    <div class="interest-card reveal"><span class="interest-emoji">🔫</span><h3 class="interest-name">和平精英</h3><p class="interest-detail">战术竞技</p></div>
-    <div class="interest-card reveal"><span class="interest-emoji">♟️</span><h3 class="interest-name">国际象棋</h3><p class="interest-detail">多邻国每日练习</p></div>
-    <div class="interest-card reveal"><span class="interest-emoji">🌍</span><h3 class="interest-name">英语学习</h3><p class="interest-detail">多邻国每日打卡</p></div>
-    <div class="interest-card reveal"><span class="interest-emoji">💻</span><h3 class="interest-name">编程</h3><p class="interest-detail">Python · C++ · ESP32</p></div>
+    <div class="interest-card reveal visible"><span class="interest-emoji">🏸</span><h3 class="interest-name">羽毛球</h3><p class="interest-detail">每周和爸爸对战</p></div>
+    <div class="interest-card reveal visible"><span class="interest-emoji">🚴</span><h3 class="interest-name">骑车</h3><p class="interest-detail">探索城市周边</p></div>
+    <div class="interest-card reveal visible"><span class="interest-emoji">🎮</span><h3 class="interest-name">Minecraft</h3><p class="interest-detail">红石 &amp; 建筑大师</p></div>
+    <div class="interest-card reveal visible"><span class="interest-emoji">🃏</span><h3 class="interest-name">Kards</h3><p class="interest-detail">策略卡牌对战</p></div>
+    <div class="interest-card reveal visible"><span class="interest-emoji">🔫</span><h3 class="interest-name">和平精英</h3><p class="interest-detail">战术竞技</p></div>
+    <div class="interest-card reveal visible"><span class="interest-emoji">♟️</span><h3 class="interest-name">国际象棋</h3><p class="interest-detail">多邻国每日练习</p></div>
+    <div class="interest-card reveal visible"><span class="interest-emoji">🌍</span><h3 class="interest-name">英语学习</h3><p class="interest-detail">多邻国每日打卡</p></div>
+    <div class="interest-card reveal visible"><span class="interest-emoji">💻</span><h3 class="interest-name">编程</h3><p class="interest-detail">Python · C++ · ESP32</p></div>
   </div>
-  <div class="streak-banner reveal">
+  <div class="streak-banner reveal visible">
     <span class="streak-icon">🔥</span>
     <div class="streak-info">
       <h3>多邻国连续打卡</h3>
       <p>国际象棋 ♟️ + 英语 🌍 · 每天坚持</p>
     </div>
-    <span class="streak-count" id="streakCount">0</span>
+    <span class="streak-count" id="streakCount">365</span>
   </div>
 </section>
 
@@ -2380,15 +2832,23 @@ textarea.form-input {
 <footer class="footer">
   <div class="footer-brand">XG-SPACE</div>
   <p class="footer-text">翔哥的数字空间 · 持续更新中</p>
-  <p class="footer-text">Built with ❤️ by 翔哥 & 爸爸</p>
+  <p class="footer-text">Built with ❤️ by 翔哥 &amp; 爸爸</p>
   <div class="footer-links">
     <a href="#">B站主页</a>
-    <a href="#">GitHub</a>
+    <a href="https://luozhenxiang793.github.io/xg-space/">GitHub</a>
     <a href="#">联系我</a>
   </div>
 </footer>
 
 <script>
+// Subject card click to navigate
+document.querySelectorAll('.subject-card[data-href]').forEach(card => {
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('a')) return; // don't hijack inner links
+    window.location.href = card.dataset.href;
+  });
+});
+
 // ==========================================
 // DATA STORE (localStorage)
 // ==========================================
